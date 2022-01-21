@@ -1,0 +1,13 @@
+D:\LVA\ITG\Projects\HEXtoFLOAT\HEXtoFLOAT\bin\Release\HEXtoFLOAT.exe
+D:\LVA\ITG\Projects\HEXtoFLOAT\HEXtoFLOAT\bin\Release\HEXtoFLOAT.pdb
+D:\LVA\ITG\Projects\HEXtoFLOAT\HEXtoFLOAT\obj\Release\MainWindow.g.cs
+D:\LVA\ITG\Projects\HEXtoFLOAT\HEXtoFLOAT\obj\Release\App.g.cs
+D:\LVA\ITG\Projects\HEXtoFLOAT\HEXtoFLOAT\obj\Release\HEXtoFLOAT_MarkupCompile.cache
+D:\LVA\ITG\Projects\HEXtoFLOAT\HEXtoFLOAT\obj\Release\HEXtoFLOAT_MarkupCompile.lref
+D:\LVA\ITG\Projects\HEXtoFLOAT\HEXtoFLOAT\obj\Release\MainWindow.baml
+D:\LVA\ITG\Projects\HEXtoFLOAT\HEXtoFLOAT\obj\Release\HEXtoFLOAT.g.resources
+D:\LVA\ITG\Projects\HEXtoFLOAT\HEXtoFLOAT\obj\Release\HEXtoFLOAT.Properties.Resources.resources
+D:\LVA\ITG\Projects\HEXtoFLOAT\HEXtoFLOAT\obj\Release\HEXtoFLOAT.csproj.GenerateResource.cache
+D:\LVA\ITG\Projects\HEXtoFLOAT\HEXtoFLOAT\obj\Release\HEXtoFLOAT.csproj.CoreCompileInputs.cache
+D:\LVA\ITG\Projects\HEXtoFLOAT\HEXtoFLOAT\obj\Release\HEXtoFLOAT.exe
+D:\LVA\ITG\Projects\HEXtoFLOAT\HEXtoFLOAT\obj\Release\HEXtoFLOAT.pdb

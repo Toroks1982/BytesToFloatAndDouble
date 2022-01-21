@@ -1,0 +1,210 @@
+﻿<Window x:Class="HEXtoFLOAT.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HEXtoFLOAT"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+        TextOptions.TextFormattingMode="Display"
+        ResizeMode="NoResize"
+        Title="HEXto" Height="220" Width="400">
+    <Grid>
+        <TabControl>
+            <TabItem Header="Float">
+                <StackPanel
+            Orientation="Vertical">
+                    <StackPanel Orientation="Horizontal">
+                        <Label Content="1st byte" Margin="52,0,0,0" FontSize="10"/>
+                        <Label Content="2nd byte" Margin="5,0,0,0" FontSize="10"/>
+                        <Label Content="3rd byte" Margin="5,0,0,0" FontSize="10"/>
+                        <Label Content="4th byte" Margin="5,0,0,0" FontSize="10"/>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <Label 
+                    Margin="5"
+                    Content="Value:"/>
+                        <TextBox 
+                    Width="40"
+                    Margin="5"
+                    VerticalContentAlignment="Center"
+                    HorizontalContentAlignment="Right"
+                    KeyDown="Tb1_KeyDown"
+                    Name="tb1" TabIndex="1" TextChanged="Tb_TextChanged" />
+                        <TextBox 
+                    Width="40"
+                    Margin="5"
+                    VerticalContentAlignment="Center"
+                    HorizontalContentAlignment="Right"
+                    Name="tb2" TabIndex="2" KeyDown="Tb2_KeyDown" KeyUp="Tb2_KeyUp" TextChanged="Tb_TextChanged"/>
+                        <TextBox 
+                    Width="40"
+                    Margin="5"
+                    VerticalContentAlignment="Center"
+                    HorizontalContentAlignment="Right"
+                    Name="tb3" TabIndex="3" KeyDown="Tb3_KeyDown" KeyUp="Tb3_KeyUp" TextChanged="Tb_TextChanged"/>
+                        <TextBox 
+                    Width="40"
+                    Margin="5"
+                    VerticalContentAlignment="Center"
+                    HorizontalContentAlignment="Right"
+                    Name="tb4" TabIndex="4" KeyDown="Tb4_KeyDown" KeyUp="Tb4_KeyUp" TextChanged="Tb_TextChanged"/>
+                    </StackPanel>
+                    <Separator/>
+                    <StackPanel
+                Orientation="Horizontal">
+                        <Label 
+                    Margin="5"
+                    Content="Result:"/>
+                        <TextBox 
+                    Width="90"
+                    Margin="5" IsReadOnly="True"
+                    VerticalContentAlignment="Center"
+                    HorizontalContentAlignment="Right"
+                    Name="tbResult" TabIndex="6" KeyDown="TbResult_KeyDown"/>
+                        <TextBox 
+                    Width="90"
+                    Margin="5" IsReadOnly="True"
+                    VerticalContentAlignment="Center"
+                    HorizontalContentAlignment="Right"
+                    Name="tbResult2"/>
+                    </StackPanel>
+                    <Separator/>
+                    <StackPanel
+                Orientation="Horizontal"
+                HorizontalAlignment="Center">
+                        <Button Name="btCalculate"
+                    Width="100"
+                    Height="30"
+                    Content="Calculate"
+                    Click="Button_Click" TabIndex="5"/>
+                    </StackPanel>
+                </StackPanel>
+            </TabItem>
+            <TabItem Header="Double">
+                <StackPanel
+            Orientation="Vertical">
+                    <StackPanel Orientation="Horizontal">
+                        <Label Content="1st" Margin="55,0,0,0" FontSize="10"/>
+                        <Label Content="2nd" Margin="11,0,0,0" FontSize="10"/>
+                        <Label Content="3rd" Margin="11,0,0,0" FontSize="10"/>
+                        <Label Content="4th" Margin="11,0,0,0" FontSize="10"/>
+                        <Label Content="5th" Margin="11,0,0,0" FontSize="10"/>
+                        <Label Content="6th" Margin="11,0,0,0" FontSize="10"/>
+                        <Label Content="7th" Margin="11,0,0,0" FontSize="10"/>
+                        <Label Content="8th" Margin="11,0,0,0" FontSize="10"/>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <Label 
+                            Margin="5"
+                            Content="Value:"/>
+                        <TextBox 
+                            Name="tb1D" TabIndex="1" 
+                            Width="25"
+                            Margin="5"
+                            VerticalContentAlignment="Center"
+                            HorizontalContentAlignment="Right"
+                            KeyDown="Tb1D_KeyDown"
+                            TextChanged="Tb_TextChanged" />
+                        <TextBox 
+                            Name="tb2D" TabIndex="2"
+                            Width="25"
+                            Margin="5"
+                            VerticalContentAlignment="Center"
+                            HorizontalContentAlignment="Right"
+                            KeyDown="Tb2D_KeyDown" 
+                            KeyUp="TbD_KeyUp"
+                            TextChanged="Tb_TextChanged"/>
+                        <TextBox 
+                            Name="tb3D" TabIndex="3"
+                            Width="25"
+                            Margin="5"
+                            VerticalContentAlignment="Center"
+                            HorizontalContentAlignment="Right"
+                            KeyDown="Tb3D_KeyDown" 
+                            KeyUp="TbD_KeyUp"
+                            TextChanged="Tb_TextChanged"/>
+                        <TextBox 
+                            Name="tb4D" TabIndex="4" 
+                            Width="25"
+                            Margin="5"
+                            VerticalContentAlignment="Center"
+                            HorizontalContentAlignment="Right"
+                            KeyDown="Tb4D_KeyDown" 
+                            KeyUp="TbD_KeyUp"
+                            TextChanged="Tb_TextChanged"/>
+                        <TextBox 
+                            Name="tb5D" TabIndex="5" 
+                            Width="25"
+                            Margin="5"
+                            VerticalContentAlignment="Center"
+                            HorizontalContentAlignment="Right"
+                            KeyDown="Tb5D_KeyDown"
+                            KeyUp="TbD_KeyUp"
+                            TextChanged="Tb_TextChanged" />
+                        <TextBox 
+                            Name="tb6D" TabIndex="6"
+                            Width="25"
+                            Margin="5"
+                            VerticalContentAlignment="Center"
+                            HorizontalContentAlignment="Right"
+                            KeyDown="Tb6D_KeyDown" 
+                            KeyUp="TbD_KeyUp"
+                            TextChanged="Tb_TextChanged"/>
+                        <TextBox 
+                            Name="tb7D" TabIndex="7"
+                            Width="25"
+                            Margin="5"
+                            VerticalContentAlignment="Center"
+                            HorizontalContentAlignment="Right"
+                            KeyDown="Tb7D_KeyDown" 
+                            KeyUp="TbD_KeyUp"
+                            TextChanged="Tb_TextChanged"/>
+                        <TextBox 
+                            Name="tb8D" TabIndex="8" 
+                            Width="25"
+                            Margin="5"
+                            VerticalContentAlignment="Center"
+                            HorizontalContentAlignment="Right"
+                            KeyDown="Tb8D_KeyDown" 
+                            KeyUp="TbD_KeyUp"
+                            TextChanged="Tb_TextChanged"/>
+                    </StackPanel>
+                    <Separator/>
+                    <StackPanel Orientation="Horizontal">
+                        <Label 
+                            Margin="5"
+                            Content="Result (Double):"/>
+                        <TextBox 
+                            Name="tbResultD" TabIndex="10" 
+                            Width="90"
+                            Margin="5" IsReadOnly="True"
+                            VerticalContentAlignment="Center"
+                            HorizontalContentAlignment="Right"
+                            KeyDown="TbResultD_KeyDown"/>
+                        <TextBox 
+                            Name="tbResult2D"
+                            Width="90"
+                            Margin="5" IsReadOnly="True"
+                            VerticalContentAlignment="Center"
+                            HorizontalContentAlignment="Right"
+                            />
+                    </StackPanel>
+                    <Separator/>
+                    <StackPanel
+                        Orientation="Horizontal"
+                        HorizontalAlignment="Center">
+                        <Button 
+                            Name="btCalculateD"
+                            Width="100"
+                            Height="30"
+                            Content="Calculate"
+                            Click="ButtonD_Click" 
+                            TabIndex="9"/>
+                    </StackPanel>
+                </StackPanel>
+            </TabItem>
+        </TabControl>
+
+    </Grid>
+</Window>
